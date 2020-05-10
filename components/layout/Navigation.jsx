@@ -1,6 +1,21 @@
 import React, { Fragment } from "react";
-import {css} from '@emotion/core';
-import Link from 'next/link';
+import { css } from "@emotion/core";
+import styled from "@emotion/styled";
+import Link from "next/link";
+import Navlinks from "../UI/Navlinks";
+
+const Nav = styled.nav`
+  display: flex;
+  align-items: center;
+  a {
+    font-size: 1.3rem;
+    margin-left: 0rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+`;
 
 const Navigation = () => {
   return (
@@ -12,23 +27,17 @@ const Navigation = () => {
             align-items: center;
           `}
         >
-          <nav
-            css={css`
-              padding-left: 2rem;
-              a {
-                font-size: 1.8rem;
-                margin-left: 2rem;
-
-                &:last-of-type {
-                  margin-right: 0;
-                }
-              }
-            `}
-          >
-            <Link href="/">About me</Link>
-            <Link href="/">Skills</Link>
-            <Link href="/">Interest</Link>
-          </nav>
+          <Nav>
+            <Link href="/">
+              <Navlinks>About me</Navlinks>
+            </Link>
+            <Link href="/">
+              <Navlinks>Skills</Navlinks>
+            </Link>
+            <Link href="/">
+              <Navlinks>Interests</Navlinks>
+            </Link>
+          </Nav>
         </div>
       </div>
     </Fragment>

@@ -4,7 +4,7 @@ const Header = () => {
     return ( 
         <Fragment>
             <h1 className="title">Hi.</h1>
-            <h2 className="title2">My name is Isaac Rodríguez.</h2>
+            <h2 className="title2">My name is Isaac Rodríguez Matturen.</h2>
         </Fragment>
      );
 }

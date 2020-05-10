@@ -4,7 +4,6 @@ import Head from "next/head";
 import Header from "./Header";
 import Navigation from "./Navigation";
 
-
 const Layout = (props) => {
   return (
     <Fragment>
@@ -167,15 +166,15 @@ const Layout = (props) => {
               width: 100%;
               flex-direction: column;
             }
-          }
+          }      
         `}
       />
       <Head>
         <title>Isaac Rodríguez Matturen</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <Header/>
-      <Navigation/>
+      <Header />
+      <Navigation />
       <main>{props.children}</main>
     </Fragment>
   );

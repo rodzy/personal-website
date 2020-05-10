@@ -11,15 +11,14 @@ export default function Home() {
     <div className="container">
       
 <main>
-
       <Layout/>
 </main>
-        {/* <p className="description">
+        <p className="description">
           I'm currently a software enginering student, coursing desco
-        </p> */}
+        </p> 
 
 
-          {/* <a href="https://nextjs.org/docs" className="card">
+           <a href="https://nextjs.org/docs" className="card">
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
@@ -45,10 +44,9 @@ export default function Home() {
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </a> */}
+          </a>
       <Footer/>
     </div>
-   
     </Fragment>
   );
 }
