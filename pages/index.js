@@ -4,17 +4,20 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Isaac Rodríguez</title>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Hi.
         </h1>
+        <h2 className="title2">
+          My name is Isaac Rodríguez.
+        </h2>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          I'm currently a software enginering student, coursing 
         </p>
 
         <div className="grid">
@@ -61,6 +64,7 @@ export default function Home() {
 
       <style jsx>{`
         .container {
+          background-color: black;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
@@ -103,7 +107,7 @@ export default function Home() {
         }
 
         .title a {
-          color: #0070f3;
+          color: #ffffff;
           text-decoration: none;
         }
 
@@ -114,9 +118,16 @@ export default function Home() {
         }
 
         .title {
+          color:#ffff;
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
+        }
+        .title2 {
+          color:#ffff;
+          margin: 0;
+          line-height: 1.15;
+          font-size: 2rem;
         }
 
         .title,
@@ -127,6 +138,7 @@ export default function Home() {
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
+          color:#ffff;
         }
 
         code {
