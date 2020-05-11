@@ -13,7 +13,7 @@ export default function Home() {
 <main>
       <Layout/>
 </main>
-        <p className="description">
+        {/* <p className="description">
           I'm currently a software enginering student, coursing desco
         </p> 
 
@@ -44,7 +44,7 @@ export default function Home() {
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </a>
+          </a> */}
       <Footer/>
     </div>
     </Fragment>

@@ -3,12 +3,13 @@ import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 import Link from "next/link";
 import Navlinks from "../UI/Navlinks";
+import Navtext from "../UI/Navtext";
 
 const Nav = styled.nav`
   display: flex;
   align-items: center;
   a {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-left: 0rem;
 
     &:last-of-type {
@@ -28,14 +29,20 @@ const Navigation = () => {
           `}
         >
           <Nav>
-            <Link href="/">
-              <Navlinks>About me</Navlinks>
+            <Link href="/About">
+              <Navlinks>
+                <Navtext>About me</Navtext>
+              </Navlinks>
+            </Link>
+            <Link href="/Skills">
+              <Navlinks>
+                <Navtext>Skills</Navtext>
+              </Navlinks>
             </Link>
             <Link href="/">
-              <Navlinks>Skills</Navlinks>
-            </Link>
-            <Link href="/">
-              <Navlinks>Interests</Navlinks>
+              <Navlinks>
+                <Navtext>Interests</Navtext>
+              </Navlinks>
             </Link>
           </Nav>
         </div>
