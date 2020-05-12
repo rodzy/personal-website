@@ -51,17 +51,32 @@ const Layout = (props) => {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding:40px;
+            text-align:center;
           }
 
           footer img {
+            
             margin-left: 0.5rem;
             margin-right: 1rem;
           }
 
           footer a {
-            display: flex;
+            display: inline-block;
             justify-content: center;
             align-items: center;
+          }
+          footer p {
+            display:block;
+            
+            flex-direction:column;
+            justify-content:center;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            
+            
           }
 
           a {
@@ -99,13 +114,14 @@ const Layout = (props) => {
           }
 
           .description {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+            font-weight:bold;
             position:relative;
             flex:1;
             top:-130px;
             margin:0;
             width:700px;
-
+            
 
           }
 
@@ -178,12 +194,13 @@ const Layout = (props) => {
               width:90%;  
               top:-250px;
           }
-     
+
         `}
       />
       <Head>
         <title>Isaac Rodríguez Matturen</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
+        
       </Head>
       <Header />
       <Navigation />

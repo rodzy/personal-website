@@ -38,10 +38,10 @@ const About = () => {
           </div>
           <div >
             <p className="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-              blanditiis. Laborum, maiores quos? Quidem iste exercitationem
-              dolore eos, iure sint odio dolorem voluptatum, aut temporibus
-              soluta repudiandae magni, tenetur numquam.
+             I'm a software engineering student from Costa Rica currently on my last year of B.S.
+             <br/>I truly enjoy web development but I got some experience using desktop technologies aswell.
+             <br/>Outside of programming I like to play video games, go landscaping and sometimes play basketball
+
             </p>
           </div>
         </main>

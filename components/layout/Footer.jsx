@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 const Footer = () => {
   return (
     <Fragment>
-      <footer>
+      <footer>    
         <a
           href="https://github.com/rodzy"
           target="_blank"
