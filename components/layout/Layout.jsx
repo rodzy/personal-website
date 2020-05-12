@@ -3,6 +3,7 @@ import { Global, css } from "@emotion/core";
 import Head from "next/head";
 import Header from "./Header";
 import Navigation from "./Navigation";
+import Footer from './Footer';
 
 const Layout = (props) => {
   return (
@@ -98,9 +99,14 @@ const Layout = (props) => {
           }
 
           .description {
-            color: #0000;
-            line-height: 1.5;
             font-size: 1.5rem;
+            position:relative;
+            flex:1;
+            top:-130px;
+            margin:0;
+            width:700px;
+
+
           }
 
           code {
@@ -119,7 +125,7 @@ const Layout = (props) => {
             flex-wrap: wrap;
 
             max-width: 800px;
-            margin-top: 3rem;
+            margin-top: 1.5rem;
           }
 
           .card {
@@ -166,7 +172,13 @@ const Layout = (props) => {
               width: 100%;
               flex-direction: column;
             }
-          }      
+          }
+          .coverImg{
+              display:flex;
+              width:90%;  
+              top:-250px;
+          }
+     
         `}
       />
       <Head>

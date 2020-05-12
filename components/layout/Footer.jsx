@@ -18,6 +18,9 @@ const Footer = () => {
         >
           <img src="/twitter.svg" alt="Twitter logo" className="logo" />
         </a>
+        <a href="https://discord.gg/rod#3533">
+        <img src="/discord.svg" alt="Discord logo" className="logo" />
+        </a>
         <a href="mailto:irod2899@gmail.com">
           <img src="/email.svg" alt="Contact logo" className="logo" />
         </a>

@@ -11,10 +11,6 @@ const Nav = styled.nav`
   a {
     font-size: 1rem;
     margin-left: 0rem;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
   }
 `;
 
