@@ -9,9 +9,15 @@ const Skills = () => {
             <div className="container">
                 <main>
                     <Layout/>
-                    <h1>Soy Skills</h1>
+                    <div>
+                        <h1>Hi</h1>
+                    </div>
+                    <div>
+                        <p>
+                            Hola
+                        </p>
+                    </div>
                 </main>
-                <Footer/>
             </div>
         </Fragment>
      );

@@ -115,7 +115,7 @@ const Layout = (props) => {
 
           .description {
             font-size: 1.2rem;
-            font-weight:bold;
+            font-weight:100;
             position:relative;
             flex:1;
             top:-130px;
