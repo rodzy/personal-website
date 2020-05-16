@@ -1,20 +1,16 @@
 import styled from "@emotion/styled";
 
-const Navlinks = styled.a`
-  padding: 10px 25px;
-  font-weight: 500;
+const LinkLink = styled.a`
+  font-weight: 100;
   background: transparent;
   outline: none !important;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: flex;
-  text-align: center;
-
-  width: 130px;
+  width: 75px;
   height: 40px;
-  line-height: 42px;
-  padding: 0;
+  line-height: 20px;
+
   border: none;
   &::before,
   &::after {
@@ -47,4 +43,4 @@ const Navlinks = styled.a`
   }
 `;
 
-export default Navlinks;
+export default LinkLink;

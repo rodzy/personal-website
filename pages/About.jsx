@@ -1,23 +1,10 @@
 import Layout from "../components/layout/Layout";
 import { Fragment } from "react";
 import Footer from "../components/layout/Footer";
+import LinkLink from '../components/UI/LinkLink';
+import Linktext from '../components/UI/Linktext';
 import styled from "@emotion/styled";
 
-const DivAbout = styled.div`
-  width: 90%;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  top: -110px;
-  margin: auto;
-`;
-const DivImage = styled.div`
-  border: groove;
-  flex: 1;
-  flex-direction: row;
-  position: relative;
-`;
 const Me = styled.img`
   content: url("/83157061_1812557535541457_900108481044938752_o.jpg");
   width: 150px;
@@ -27,7 +14,7 @@ const Me = styled.img`
   top: -150px;
 `;
 
-const About = () => {
+export default function About() {
   return (
     <Fragment>
       <div className="container">
@@ -39,7 +26,8 @@ const About = () => {
           <div >
             <p className="description">
              I'm a software engineering student from Costa Rica currently on my last year of B.S.
-             <br/>I truly enjoy web development but I got some experience using desktop technologies aswell.
+             <br/>I truly enjoy web development but I got some experience using desktop technologies aswell,
+             you can find most of my code on <LinkLink href="https://github.com/rodzy"><Linktext>&nbsp;Github&nbsp;</Linktext></LinkLink> if you're intrested on it
              <br/>Outside of programming I like to play video games, go landscaping and sometimes play basketball
 
             </p>
@@ -52,4 +40,4 @@ const About = () => {
   );
 };
 
-export default About;
+

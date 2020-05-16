@@ -3,32 +3,28 @@ import { Fragment } from "react";
 import Footer from "../components/layout/Footer";
 import styled from "@emotion/styled";
 
-const Me = styled.img`
-  content: url("/83157061_1812557535541457_900108481044938752_o.jpg");
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  position: relative;
-  top: -150px;
+const Content = styled.p`
+  position:relative;
+  font-size:30px;
+  top:-250px;
+  font-weight:1;
 `;
 
 const Blog = () => {
-    return ( 
-        <Fragment>
-        <div className="container">
-          <main>
-            <Layout />
-            <div >
-              <p className="description">
-                    🚧 Work in progress
-              </p>
-            </div>
-          </main>
-  
-          <Footer />
-        </div>
-      </Fragment>
-     );
-}
- 
+  return (
+    <Fragment>
+      <div className="container">
+        <main>
+          <Layout />
+          <div>
+            <Content>🚧 Work in progress 🚧</Content>
+          </div>
+        </main>
+
+        <Footer />
+      </div>
+    </Fragment>
+  );
+};
+
 export default Blog;
