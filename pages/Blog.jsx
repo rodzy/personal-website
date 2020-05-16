@@ -8,6 +8,8 @@ const Content = styled.p`
   font-size:30px;
   top:-150px;
   font-weight:1;
+
+
 `;
 
 const Blog = () => {

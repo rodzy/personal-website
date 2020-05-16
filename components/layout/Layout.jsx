@@ -39,7 +39,7 @@ const Layout = (props) => {
           main {
             width:70%;
             padding: 5rem 0;
-            
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -187,20 +187,41 @@ const Layout = (props) => {
           }
 
           @media screen and (max-width: 1024px) {
-            .grid {
-              width: 100%;
-              flex-direction: column;
-            }
-            .presentation{
-              text-align:center;
-              font-size:18px;
-            }
-            .container{
+            main{
               width:100%;
               flex-direction:column;
-            }    
+              align-items:center;
+            }
+            footer{
+              width:100%;
+            }
+            header{
+              width:100%;
+            }
+            .description{
+              width:100%;
+              font-size:1rem;
+              margin:1;           
+            }
+            .title{
+              font-size:2rem;
+            }
+            .title2{
+              font-size:1.5rem;
+            }
           }
-
+          @media screen and (max-width: 400px){
+            nav{
+              width:250px; 
+              font-size:1rem;
+            } 
+            .title{
+              font-size:2rem;
+            }
+            .title2{
+              font-size:1.2rem;
+            }
+          }
           
           .coverImg{
               display:flex;
@@ -212,8 +233,8 @@ const Layout = (props) => {
       />
       <Head>
         <title>Isaac Rodríguez Matturen</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
       </Head>
       <Header />

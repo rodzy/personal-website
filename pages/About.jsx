@@ -23,18 +23,17 @@ export default function About() {
           <div>
             <Me />
           </div>
-          <div >
+
             <p className="description">
              I'm a software engineering student from Costa Rica currently on my last year of B.S.
              <br/>I truly enjoy web development but I got some experience using desktop technologies aswell,
              you can find most of my code on <LinkLink href="https://github.com/rodzy"><Linktext>&nbsp;Github&nbsp;</Linktext></LinkLink> if you're intrested on it
-             <br/>Outside of programming I like to play video games, go landscaping and sometimes play basketball
-
+             <br/>Outside of programming I like to play video games, go landscaping and sometimes play basketball.
             </p>
-          </div>
+ 
+        <Footer />
         </main>
 
-        <Footer />
       </div>
     </Fragment>
   );
