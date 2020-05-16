@@ -6,7 +6,7 @@ import styled from "@emotion/styled";
 const Content = styled.p`
   position:relative;
   font-size:30px;
-  top:-250px;
+  top:-150px;
   font-weight:1;
 `;
 
