@@ -2,14 +2,12 @@ import Layout from "../components/layout/Layout";
 import { Fragment } from "react";
 import Footer from "../components/layout/Footer";
 import styled from "@emotion/styled";
+import { css } from "@emotion/core";
 
 const Content = styled.p`
-  position:relative;
-  font-size:30px;
-  top:-150px;
-  font-weight:1;
-
-
+  position: relative;
+  font-size: 30px;
+  font-weight: 1;
 `;
 
 const Blog = () => {
@@ -18,7 +16,14 @@ const Blog = () => {
       <div className="container">
         <main>
           <Layout />
-          <div>
+          <div
+            css={css`
+              display: flex;
+              text-align: center;
+              align-content: center;
+              top: -200px;
+            `}
+          >
             <Content>🚧 Work in progress 🚧</Content>
           </div>
         </main>

@@ -3,7 +3,7 @@ import { Global, css } from "@emotion/core";
 import Head from "next/head";
 import Header from "./Header";
 import Navigation from "./Navigation";
-import Footer from './Footer';
+import Footer from "./Footer";
 
 const Layout = (props) => {
   return (
@@ -25,9 +25,18 @@ const Layout = (props) => {
           * {
             box-sizing: border-box;
           }
+          body::-webkit-scrollbar {
+            width: 0.5rem;
+          }
+          body::-webkit-scrollbar-track {
+            background: grey;
+          }
+          body::-webkit-scrollbar-thumb {
+            background: black;
+          }
           .container {
-            width:100%;
-            background-color: white;
+            width: 100%;
+            background-color: #ffffff;
             min-height: 100vh;
             padding: 0 0.5rem;
             display: flex;
@@ -37,29 +46,28 @@ const Layout = (props) => {
           }
 
           main {
-            width:70%;
-            padding: 5rem 0;
+            width: 100%;
+            padding: 2rem 0;
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            box-sizing:border-box;
+            box-sizing: border-box;
           }
 
           footer {
             width: 100%;
-            height: 100px;
-            border-top: 1px solid #eaeaea;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding:40px;
-            text-align:center;
+
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+            box-sizing: border-box;
           }
 
           footer img {
-            
             margin-left: 0.5rem;
             margin-right: 1rem;
           }
@@ -70,16 +78,11 @@ const Layout = (props) => {
             align-items: center;
           }
           footer p {
-            display:block;
-            
-            flex-direction:column;
-            justify-content:center;
+            justify-content: center;
             margin-block-start: 1em;
             margin-block-end: 1em;
             margin-inline-start: 0px;
             margin-inline-end: 0px;
-            
-            
           }
 
           a {
@@ -118,14 +121,12 @@ const Layout = (props) => {
 
           .description {
             font-size: 1.2rem;
-            font-weight:100;
-            position:relative;
-            flex:1;
-            top:-130px;
-            margin:0;
-            width:700px;
-            
-
+            font-weight: 400;
+            flex: 1;
+            top: -150px;
+            margin: 0;
+            width: 700px;
+            letter-spacing:0.01rem;
           }
 
           code {
@@ -140,22 +141,26 @@ const Layout = (props) => {
           .grid {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
+            
             flex-wrap: wrap;
 
-            max-width: 800px;
-            margin-top: 1.5rem;
+            max-width: 1024px;
+            margin-top: 0.4rem;
           }
 
+          .maincard{
+            width:85vh;
+            margin-left:0rem;
+            align-self:center;
+          }
           .card {
-            margin: 1rem;
-            flex-basis: 45%;
-            padding: 1.5rem;
+            margin: 0.5rem;
+            width:25rem;
+            height: 15rem;
             text-align: left;
-            color: inherit;
+            border:1px;
             text-decoration: none;
-            border: 1px solid #eaeaea;
-            border-radius: 10px;
             transition: color 0.15s ease, border-color 0.15s ease;
           }
 
@@ -166,76 +171,94 @@ const Layout = (props) => {
             border-color: #0070f3;
           }
 
-          .card h3 {
-            margin: 0 0 1rem 0;
-            font-size: 1.5rem;
+          .cont {
+            padding-top: 2rem;
+            display: flex;
+            box-sizing: border-box;
+            justify-content: center;
           }
-
-          .card p {
-            margin: 0;
-            font-size: 1.25rem;
-            line-height: 1.5;
-          }
-
           .logo {
-            height: 2em;
+            height: 1.4em;
+            display: flex;
             transition: all 0.25s ease 0s;
+            margin-left: 1rem;
+            margin-right: 1rem;
           }
 
           .logo:hover {
-            height: 3rem;
+            display: block;
           }
 
           @media screen and (max-width: 1024px) {
-            main{
+            main {
+              width: 100%;
+              flex-direction: column;
+              align-items: center;
+            }
+            footer {
+              width: 100%;
+            }
+            header {
+              width: 100%;
+            }
+            h2{
+              font-size:1.3rem;
+            }
+
+            .description {
+              width: 100%;
+              font-size: 1rem;
+              margin: 1;
+            }
+            .title {
+              font-size: 2rem;
+            }
+            .title2 {
+              font-size: 1.5rem;
+            }
+            .grid{
               width:100%;
-              flex-direction:column;
-              align-items:center;
             }
-            footer{
+            .maincard{
               width:100%;
-            }
-            header{
-              width:100%;
-            }
-            .description{
-              width:100%;
-              font-size:1rem;
-              margin:1;           
-            }
-            .title{
-              font-size:2rem;
-            }
-            .title2{
-              font-size:1.5rem;
             }
           }
-          @media screen and (max-width: 400px){
-            nav{
-              width:250px; 
-              font-size:1rem;
-            } 
-            .title{
-              font-size:2rem;
+          @media screen and (max-width: 400px) {
+            main {
+              width: 100%;
+              flex-direction: column;
+              align-items: center;
             }
-            .title2{
-              font-size:1.2rem;
+            nav {
+              width: 250px;
+              font-size: 1rem;
             }
-          }
-          
-          .coverImg{
-              display:flex;
-              width:90%;  
-              top:-250px;
+            .title {
+              font-size: 2rem;
+            }
+            .title2 {
+              font-size: 1.2rem;
+            }
+            .image {
+              width: 120px;
+              height: 120px;
+            }
+            .logo {
+              width: 27px;
+            }
           }
 
+          .coverImg {
+            display: flex;
+            width: 90%;
+            top: -250px;
+          }
         `}
       />
       <Head>
         <title>Isaac Rodríguez Matturen</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
       </Head>
       <Header />
       <Navigation />

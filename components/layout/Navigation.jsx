@@ -25,7 +25,7 @@ const Navigation = () => {
           `}
         >
           <Nav>
-            <Link href="/About">
+            <Link href="/">
               <Navlinks>
                 <Navtext>About me</Navtext>
               </Navlinks>
