@@ -58,7 +58,6 @@ const Skills = () => {
                   <li>C#</li>
                   <li>JavaScript</li>
                   <li>Go</li>
-                  <li>TypeScript</li>
                 </Typography>
               </CardContent>
             </Card>
@@ -91,7 +90,7 @@ const Skills = () => {
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h5">
                   <center>
-                    Relational database enviroments&nbsp;<br></br>
+                    Relational database environments&nbsp;<br></br>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -113,7 +112,7 @@ const Skills = () => {
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h5">
                   <center>
-                    NoSQL database enviroments&nbsp;<br></br>
+                    NoSQL database environments&nbsp;<br></br>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -219,6 +218,7 @@ const Skills = () => {
                 </Typography>
                 <Typography variant="body1" color="textPrimary" component="ul">
                   <li>Angular (Currently learning)</li>
+                  <li>TypeScript (Currently learning)</li>
                   <li>Rust</li>
                   <li>PHP/Laravel</li>
                   <li>WASM</li>

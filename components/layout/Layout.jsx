@@ -188,6 +188,9 @@ const Layout = (props) => {
           .logo:hover {
             display: block;
           }
+          .item{
+            list-style:none;
+          }
 
           @media screen and (max-width: 1024px) {
             main {

@@ -35,13 +35,6 @@ const Navigation = () => {
                 <Navtext>Education</Navtext>
               </Navlinks>
             </Link>
-            <Link href="/Blog">
-              <Navlinks>
-                <Navtext>
-                  Blog
-                </Navtext>
-              </Navlinks>
-            </Link>
           </Nav>
         </div>
       </div>

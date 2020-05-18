@@ -22,7 +22,7 @@ export default function Home() {
         <main>
           <Layout />
           <p className="description">
-          <Me className="image" /><br></br>
+          {/* <Me className="image" /><br></br> */}
             I'm a software engineering student from Costa Rica currently on my
             last year of B.S.
             <br />I truly enjoy web development but I got some experience using
