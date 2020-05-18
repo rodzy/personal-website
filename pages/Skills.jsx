@@ -54,10 +54,10 @@ const Skills = () => {
                   </center>
                 </Typography>
                 <Typography variant="body1" color="textPrimary" component="ul">
-                  <li>Java</li>
-                  <li>C#</li>
-                  <li>JavaScript</li>
-                  <li>Go</li>
+                  <li className="item">Java</li>
+                  <li className="item">C#</li>
+                  <li className="item">JavaScript</li>
+                  <li className="item">Go</li>
                 </Typography>
               </CardContent>
             </Card>
@@ -78,10 +78,10 @@ const Skills = () => {
                   </center>
                 </Typography>
                 <Typography variant="body1" color="textPrimary" component="ul">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JSON</li>
-                  <li>XML</li>
+                  <li className="item">HTML</li>
+                  <li className="item">CSS</li>
+                  <li className="item">JSON</li>
+                  <li className="item">XML</li>
                 </Typography>
               </CardContent>
             </Card>
@@ -102,8 +102,8 @@ const Skills = () => {
                   </center>
                 </Typography>
                 <Typography variant="body1" color="textPrimary" component="ul">
-                  <li>Microsoft SQL Server</li>
-                  <li>MySQL</li>
+                  <li className="item">Microsoft SQL Server</li>
+                  <li className="item">MySQL</li>
                 </Typography>
               </CardContent>
             </Card>
@@ -124,9 +124,9 @@ const Skills = () => {
                   </center>
                 </Typography>
                 <Typography variant="body1" color="textPrimary" component="ul">
-                  <li>MongoDB</li>
-                  <li>MongoDB Atlas</li>
-                  <li>Firebase Cloud Firestore</li>
+                  <li className="item">MongoDB</li>
+                  <li className="item">MongoDB Atlas</li>
+                  <li className="item">Firebase Cloud Firestore</li>
                 </Typography>
               </CardContent>
             </Card>
@@ -147,10 +147,10 @@ const Skills = () => {
                   </center>
                 </Typography>
                 <Typography variant="body1" color="textPrimary" component="ul">
-                  <li>Microsoft ASP.NET MVC</li>
-                  <li>Echo</li>
-                  <li>Node.js</li>
-                  <li>Express</li>
+                  <li className="item">Microsoft ASP.NET MVC</li>
+                  <li className="item">Echo</li>
+                  <li className="item">Node.js</li>
+                  <li className="item">Express</li>
                 </Typography>
               </CardContent>
             </Card>
@@ -171,10 +171,10 @@ const Skills = () => {
                   </center>
                 </Typography>
                 <Typography variant="body1" color="textPrimary" component="ul">
-                  <li>React *Next.js & Gatsby*</li>
-                  <li>JQuery</li>
-                  <li>JSF Facelets</li>
-                  <li>Vue</li>
+                  <li className="item">React *Next.js & Gatsby*</li>
+                  <li className="item">JQuery</li>
+                  <li className="item">JSF Facelets</li>
+                  <li className="item">Vue</li>
                 </Typography>
               </CardContent>
             </Card>
@@ -195,9 +195,9 @@ const Skills = () => {
                   </center>
                 </Typography>
                 <Typography variant="body1" color="textPrimary" component="ul">
-                  <li>Git (Version control)</li>
-                  <li>Docker (Container registry)</li>
-                  <li>Figma (Design tool)</li>
+                  <li className="item">Git (Version control)</li>
+                  <li className="item">Docker (Container registry)</li>
+                  <li className="item">Figma (Design tool)</li>
                 </Typography>
               </CardContent>
             </Card>
@@ -217,11 +217,11 @@ const Skills = () => {
                   </center>
                 </Typography>
                 <Typography variant="body1" color="textPrimary" component="ul">
-                  <li>Angular (Currently learning)</li>
-                  <li>TypeScript (Currently learning)</li>
-                  <li>Rust</li>
-                  <li>PHP/Laravel</li>
-                  <li>WASM</li>
+                  <li className="item">Angular (Currently learning)</li>
+                  <li className="item">TypeScript (Currently learning)</li>
+                  <li className="item">Rust</li>
+                  <li className="item">PHP/Laravel</li>
+                  <li className="item">WASM</li>
                 </Typography>
               </CardContent>
             </Card>
