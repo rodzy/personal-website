@@ -1,7 +1,10 @@
 {
-  "name": "portfoliopage",
+  "name": "@rodzy/portfoliopage",
   "version": "0.1.0",
   "private": true,
+  "description": "Isaac Rodriguez personal website",
+  "author": "Isaac Rodriguez <irod2899@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -39,7 +39,7 @@ const Linktext = styled.span`
   &:hover::after{
     background: #66ccff;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
       font-size:1rem; 
   }
 `;
