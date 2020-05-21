@@ -37,11 +37,14 @@ const Navlinks = styled.a`
   &:hover::before {
     transition: all 0.1s 0.2s ease;
     height: 100%;
+    background: #66ccff;
   }
   &:hover::after {
     transition: all 0.1s ease;
     height: 100%;
+    background: #66ccff;
   }
+  
   &:last-of-type {
     margin-right: 0;
   }

@@ -8,8 +8,8 @@ const Header = () => {
     return ( 
         <Fragment>
             <div>
-            <h1 className="title">Hi</h1>
-            <h2 className="title2">My name is Isaac Rodríguez.</h2>
+            <h4 className="title">Isaac Rodríguez</h4>
+            <h2 className="title2">Software Developer in Costa Rica</h2>
             </div>
         </Fragment>
      );

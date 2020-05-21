@@ -40,7 +40,7 @@ const Skills = () => {
           <div className="grid">
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
                   <center>
                     Programming languages&nbsp;<br></br>
                     <svg
@@ -64,7 +64,7 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
                   <center>
                     Meta languages&nbsp;<br></br>
                     <svg
@@ -88,7 +88,7 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
                   <center>
                     Relational database environments&nbsp;<br></br>
                     <svg
@@ -110,7 +110,7 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
                   <center>
                     NoSQL database environments&nbsp;<br></br>
                     <svg
@@ -133,7 +133,7 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
                   <center>
                     Backend&nbsp;<br></br>
                     <svg
@@ -157,7 +157,7 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
                   <center>
                     Frontend&nbsp;<br></br>
                     <svg
@@ -181,7 +181,7 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
                   <center>
                     Other&nbsp;<br></br>
                     <svg
@@ -203,7 +203,7 @@ const Skills = () => {
             </Card>
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
                   <center>
                     On the radar&nbsp;<br></br>
                     <svg

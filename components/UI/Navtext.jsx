@@ -29,6 +29,11 @@ const Navtext = styled.span`
 
   &:hover::before{
       width:100%;
+      background: #66ccff;
+  }
+  &:hover::after{
+      width:100%;
+      background: #66ccff;
   }
 `;
 

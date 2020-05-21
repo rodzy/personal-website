@@ -11,8 +11,11 @@ const Me = styled.img`
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  
-  
+
+  @media screen and (max-width: 400px){
+      width:80px;
+      height:80px;
+  }
 `;
 
 export default function Home() {
@@ -21,20 +24,21 @@ export default function Home() {
       <div className="container">
         <main>
           <Layout />
-          <p className="description">
-          {/* <Me className="image" /><br></br> */}
-            I'm a software engineering student from Costa Rica currently on my
-            last year of B.S.
-            <br />I truly enjoy web development but I got some experience using
-            desktop technologies aswell, you can find most of my code on{" "}
-            <LinkLink href="https://github.com/rodzy">
-              <Linktext>&nbsp;Github&nbsp;</Linktext>
-            </LinkLink>{" "}
-            if you're intrested on it
-            <br />
-            Outside of programming I like to play video games, go landscaping
-            and sometimes play basketball.
-          </p>
+          <div className="principal">
+            <p className="description">
+              <Me/>
+              <br></br>
+              Hi, my name is Isaac and I'm a software engineering student from Alajuela, Costa Rica
+              currently on my last year of B.S.<br/>
+              I truly enjoy web development and concurrent logic, if you're intrested or just curious on what I build checkout
+              my{" "}
+              <LinkLink href="https://github.com/rodzy">
+                <Linktext>&nbsp;Github.&nbsp;</Linktext>
+              </LinkLink>{" "}
+              <br />
+              Outside of programming I like to play video games, listen to music and sometimes I do play basketball.
+            </p>
+          </div>
           <div>
             <Contact />
           </div>

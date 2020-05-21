@@ -18,7 +18,7 @@ const LinkLink = styled.a`
     content: "";
     height: 0%;
     width: 2px;
-    background: #000;
+    background: #66ccff;
   }
   &::before {
     right: 0;

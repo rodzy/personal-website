@@ -14,9 +14,7 @@ const Layout = (props) => {
           body {
             padding: 0;
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-              Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-              sans-serif;
+            font-family: 'Nunito', sans-serif;
           }
           a {
             text-decoration: none;
@@ -24,7 +22,17 @@ const Layout = (props) => {
 
           * {
             box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
           }
+          ::-moz-selection{
+            color:#ffffff;
+            background:#000;
+          }
+          ::selection{
+            color:#ffffff;
+            background:#000;
+          }
+
           body::-webkit-scrollbar {
             width: 0.5rem;
           }
@@ -105,13 +113,15 @@ const Layout = (props) => {
             color: black;
             margin: 0;
             line-height: 1.15;
-            font-size: 4rem;
+            font-size: 2.5rem;
           }
           .title2 {
-            color: black;
+            color: gray;
             margin: 0;
-            line-height: 1.15;
-            font-size: 2rem;
+            line-height: 1.50;
+            font-weight:400;
+            text-align:center;
+            font-size: 1rem;
           }
 
           .title,
@@ -123,10 +133,14 @@ const Layout = (props) => {
             font-size: 1.2rem;
             font-weight: 400;
             flex: 1;
-            top: -150px;
+            
             margin: 0;
             width: 700px;
             letter-spacing:0.01rem;
+          }
+          .principal{
+            position:relative;
+            top:-186px;
           }
 
           code {
@@ -156,7 +170,8 @@ const Layout = (props) => {
           }
           .card {
             margin: 0.5rem;
-            width:25rem;
+            font-weight:bold;
+            width:20rem;
             height: 15rem;
             text-align: left;
             border:1px;
@@ -167,12 +182,12 @@ const Layout = (props) => {
           .card:hover,
           .card:focus,
           .card:active {
-            color: #0070f3;
+            color: #66ccff;
             border-color: #0070f3;
           }
 
           .cont {
-            padding-top: 2rem;
+            padding-top: 2rem;          
             display: flex;
             box-sizing: border-box;
             justify-content: center;
@@ -190,6 +205,28 @@ const Layout = (props) => {
           }
           .item{
             list-style:none;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            
+          }
+
+          a:hover{
+            color:#66ccff;
+          }
+
+          a svg{
+            fill:currentColor;
+          }
+
+          h5 svg{
+            fill:currentColor;
+          }
+          
+          .subtitle3{
+              font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              font-size:20px;
+              font-weight:600;
+              cursor:default;
           }
 
           @media screen and (max-width: 1024px) {
@@ -212,6 +249,11 @@ const Layout = (props) => {
               width: 100%;
               font-size: 1rem;
               margin: 1;
+            }
+            .principal{
+              width:100%;
+              margin:1;
+              font-size:1rem;
             }
             .title {
               font-size: 2rem;
@@ -242,6 +284,12 @@ const Layout = (props) => {
             .title2 {
               font-size: 1.2rem;
             }
+            .principal{
+              top:-40px;
+              margin:1;
+              font-size:1rem;
+            }
+
             .image {
               width: 120px;
               height: 120px;
@@ -262,6 +310,7 @@ const Layout = (props) => {
         <title>Isaac Rodríguez Matturen</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/> 
       </Head>
       <Header />
       <Navigation />
