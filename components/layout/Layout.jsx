@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Global, css } from "@emotion/core";
-import Head from "next/head";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
@@ -116,12 +115,12 @@ const Layout = (props) => {
             font-size: 2.5rem;
           }
           .title2 {
-            color: gray;
+            color: black;
             margin: 0;
             line-height: 1.50;
             font-weight:400;
             text-align:center;
-            font-size: 1rem;
+            font-size: 1.2rem;
           }
 
           .title,
@@ -306,12 +305,7 @@ const Layout = (props) => {
           }
         `}
       />
-      <Head>
-        <title>Isaac Rodríguez Matturen</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/> 
-      </Head>
+
       <Header />
       <Navigation />
       <main>{props.children}</main>

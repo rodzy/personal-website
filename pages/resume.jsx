@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import Layout from "../components/layout/Layout";
 import Footer from "../components/layout/Footer";
 import styled from "@emotion/styled";
-import { css } from "@emotion/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -10,11 +9,12 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
+import Head from "next/head";
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 800,
-    boxShadow: "none"
+    boxShadow: "none",
   },
   media: {
     height: 300,
@@ -33,6 +33,13 @@ const Skills = () => {
   const classes = useStyles();
   return (
     <Fragment>
+      <Head>
+        <title>Isaac Rodríguez - Resume</title>
+        <meta
+          name="description"
+          content="Get to know more about my skills and technical habilities"
+        ></meta>
+      </Head>
       <div className="container">
         <main>
           <Layout />
@@ -40,7 +47,12 @@ const Skills = () => {
           <div className="grid">
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h5"
+                  className="subtitle3"
+                >
                   <center>
                     Programming languages&nbsp;<br></br>
                     <svg
@@ -64,7 +76,12 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h5"
+                  className="subtitle3"
+                >
                   <center>
                     Meta languages&nbsp;<br></br>
                     <svg
@@ -88,7 +105,12 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h5"
+                  className="subtitle3"
+                >
                   <center>
                     Relational database environments&nbsp;<br></br>
                     <svg
@@ -110,7 +132,12 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h5"
+                  className="subtitle3"
+                >
                   <center>
                     NoSQL database environments&nbsp;<br></br>
                     <svg
@@ -133,7 +160,12 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h5"
+                  className="subtitle3"
+                >
                   <center>
                     Backend&nbsp;<br></br>
                     <svg
@@ -157,7 +189,12 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h5"
+                  className="subtitle3"
+                >
                   <center>
                     Frontend&nbsp;<br></br>
                     <svg
@@ -181,7 +218,12 @@ const Skills = () => {
 
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h5"
+                  className="subtitle3"
+                >
                   <center>
                     Other&nbsp;<br></br>
                     <svg
@@ -203,7 +245,12 @@ const Skills = () => {
             </Card>
             <Card className="${classes.root} card">
               <CardContent>
-                <Typography gutterBottom variant="h5" component="h5" className="subtitle3">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h5"
+                  className="subtitle3"
+                >
                   <center>
                     On the radar&nbsp;<br></br>
                     <svg
