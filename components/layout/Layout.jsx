@@ -228,7 +228,7 @@ const Layout = (props) => {
               cursor:default;
           }
 
-          @media screen and (max-width: 1024px) {
+          @media screen and (max-width: 1024px)  {
             main {
               width: 100%;
               flex-direction: column;
@@ -267,7 +267,7 @@ const Layout = (props) => {
               width:100%;
             }
           }
-          @media screen and (max-width: 500px) {
+          @media screen and (max-width: 1024px) {
             main {
               width: 100%;
               flex-direction: column;
@@ -285,6 +285,73 @@ const Layout = (props) => {
             }
             .principal{
               top:-40px;
+              margin:1;
+              font-size:1rem;
+            }
+
+            .image {
+              width: 120px;
+              height: 120px;
+            }
+            .logo {
+              width: 27px;
+            }
+          }
+
+          @media screen and (max-height: 762px) {
+            main {
+              width: 100%;
+              flex-direction: column;
+              align-items: center;
+            }
+            nav {
+              width: 250px;
+              font-size: 1rem;
+            }
+            .title {
+              font-size: 2rem;
+            }
+            .title2 {
+              font-size: 1.2rem;
+            }
+            .principal{
+              top:-50px;
+              margin:1;
+              font-size:1rem;
+            }
+
+            .image {
+              width: 120px;
+              height: 120px;
+            }
+            .logo {
+              width: 27px;
+            }
+          }
+
+          .coverImg {
+            display: flex;
+            width: 90%;
+            top: -250px;
+          }
+           @media screen and (max-height: 762px) {
+            main {
+              width: 100%;
+              flex-direction: column;
+              align-items: center;
+            }
+            nav {
+              width: 250px;
+              font-size: 1rem;
+            }
+            .title {
+              font-size: 2rem;
+            }
+            .title2 {
+              font-size: 1.2rem;
+            }
+            .principal{
+              top:-50px;
               margin:1;
               font-size:1rem;
             }

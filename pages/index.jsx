@@ -12,7 +12,7 @@ const Me = styled.img`
   height: 120px;
   border-radius: 50%;
 
-  @media screen and (max-width: 400px){
+  @media screen and (max-width: 1024px){
       width:80px;
       height:80px;
   }
