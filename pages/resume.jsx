@@ -4,8 +4,6 @@ import Footer from "../components/layout/Footer";
 import styled from "@emotion/styled";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
@@ -21,12 +19,14 @@ const useStyles = makeStyles({
   },
 });
 
-const Content = styled.div`
+const CardRows = styled.div`
+  padding-right: 50px;
   display: flex;
-  flex-direction: row;
-  font-size: 30px;
-  top: -160px;
-  font-weight: 1;
+  justify-content: space-around;
+`;
+
+const InsideRow = styled.div`
+  font-size: 1rem;
 `;
 
 const Skills = () => {
@@ -65,12 +65,32 @@ const Skills = () => {
                     </svg>
                   </center>
                 </Typography>
-                <Typography variant="body1" color="textPrimary" component="ul">
-                  <li className="item">Java</li>
-                  <li className="item">C#</li>
-                  <li className="item">JavaScript</li>
-                  <li className="item">Go</li>
-                </Typography>
+                <CardRows>
+                  <Typography
+                    variant="body2"
+                    color="textPrimary"
+                    component="ul"
+                  >
+                    <h3>Proficient:</h3>
+                    <InsideRow>
+                      <li className="item">C#</li>
+                      <li className="item">JavaScript</li>
+                      <li className="item">TypeScript</li>
+                    </InsideRow>
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textPrimary"
+                    component="ul"
+                  >
+                    <h3>Familiar:</h3>
+                    <InsideRow>
+                      <li className="item">Java</li>
+                      <li className="item">PHP</li>
+                      <li className="item">Go</li>
+                    </InsideRow>
+                  </Typography>
+                </CardRows>
               </CardContent>
             </Card>
 
@@ -94,12 +114,32 @@ const Skills = () => {
                     </svg>
                   </center>
                 </Typography>
-                <Typography variant="body1" color="textPrimary" component="ul">
-                  <li className="item">HTML</li>
-                  <li className="item">CSS</li>
-                  <li className="item">JSON</li>
-                  <li className="item">XML</li>
-                </Typography>
+                <CardRows>
+                  <Typography
+                    variant="body2"
+                    color="textPrimary"
+                    component="ul"
+                  >
+                    <h3>Proficient:</h3>
+                    <InsideRow>
+                      <li className="item">HTML</li>
+                      <li className="item">CSS</li>
+                      <li className="item">GraphQL</li>
+                      <li className="item">JSON</li>
+                    </InsideRow>
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textPrimary"
+                    component="ul"
+                  >
+                    <h3>Familiar:</h3>
+                    <InsideRow>
+                      <li className="item">Markdown</li>
+                      <li className="item">XML</li>
+                    </InsideRow>
+                  </Typography>
+                </CardRows>
               </CardContent>
             </Card>
 
@@ -123,9 +163,12 @@ const Skills = () => {
                     </svg>
                   </center>
                 </Typography>
-                <Typography variant="body1" color="textPrimary" component="ul">
-                  <li className="item">Microsoft SQL Server</li>
-                  <li className="item">MySQL</li>
+                <Typography variant="body2" color="textPrimary" component="ul">
+                  <InsideRow>
+                    <li className="item">PostgreSQL</li>
+                    <li className="item">Microsoft SQL Server</li>
+                    <li className="item">MySQL</li>
+                  </InsideRow>
                 </Typography>
               </CardContent>
             </Card>
@@ -139,7 +182,13 @@ const Skills = () => {
                   className="subtitle3"
                 >
                   <center>
-                    NoSQL database environments&nbsp;<br></br>
+                    <div
+                      style={{
+                        display: "flex",
+                      }}
+                    >
+                      NoSQL database environments&nbsp;<br></br>
+                    </div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -150,10 +199,12 @@ const Skills = () => {
                     </svg>
                   </center>
                 </Typography>
-                <Typography variant="body1" color="textPrimary" component="ul">
-                  <li className="item">MongoDB</li>
-                  <li className="item">MongoDB Atlas</li>
-                  <li className="item">Firebase Cloud Firestore</li>
+                <Typography variant="body2" color="textPrimary" component="ul">
+                  <InsideRow>
+                    <li className="item">MongoDB</li>
+                    <li className="item">MongoDB Atlas</li>
+                    <li className="item">Firebase Cloud Firestore</li>
+                  </InsideRow>
                 </Typography>
               </CardContent>
             </Card>
@@ -178,12 +229,31 @@ const Skills = () => {
                     </svg>
                   </center>
                 </Typography>
-                <Typography variant="body1" color="textPrimary" component="ul">
-                  <li className="item">Microsoft ASP.NET MVC</li>
-                  <li className="item">Echo</li>
-                  <li className="item">Node.js</li>
-                  <li className="item">Express</li>
-                </Typography>
+                <CardRows>
+                  <Typography
+                    variant="body2"
+                    color="textPrimary"
+                    component="ul"
+                  >
+                    <h3>Proficient:</h3>
+                    <InsideRow>
+                      <li className="item">NodeJS/Express</li>
+                      <li className="item">TSNode</li>
+                      <li className="item">ASP.NET MVC</li>
+                    </InsideRow>
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textPrimary"
+                    component="ul"
+                  >
+                    <h3>Familiar:</h3>
+                    <InsideRow>
+                      <li className="item">Echo/Mux</li>
+                      <li className="item">Laravel</li>
+                    </InsideRow>
+                  </Typography>
+                </CardRows>
               </CardContent>
             </Card>
 
@@ -207,69 +277,31 @@ const Skills = () => {
                     </svg>
                   </center>
                 </Typography>
-                <Typography variant="body1" color="textPrimary" component="ul">
-                  <li className="item">React *Next.js & Gatsby*</li>
-                  <li className="item">JQuery</li>
-                  <li className="item">JSF Facelets</li>
-                  <li className="item">Vue</li>
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card className="${classes.root} card">
-              <CardContent>
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="h5"
-                  className="subtitle3"
-                >
-                  <center>
-                    Other&nbsp;<br></br>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20.759 20.498l-3.743-7.856c-1.041-2.186-2.016-4.581-2.016-7.007v-2.635h-2c0 3.391-.083 5.188 2.21 10.502l3.743 7.854c.143.302-.068.644-.377.644h-1.246l-4.88-10h-2.984c1.795-4.183 1.528-5.963 1.534-9h-2v2.635c0 2.426-.975 4.82-2.016 7.006l-3.743 7.856c-.165.348-.241.708-.241 1.058 0 1.283 1.023 2.445 2.423 2.445h13.153c1.4 0 2.424-1.162 2.424-2.446 0-.35-.076-.709-.241-1.056zm-13.259 1.502c-.829 0-1.5-.671-1.5-1.5s.671-1.5 1.5-1.5 1.5.671 1.5 1.5-.671 1.5-1.5 1.5zm2.5-4c-.553 0-1-.447-1-1 0-.553.447-1 1-1 .552 0 1 .447 1 1 0 .553-.448 1-1 1zm3 3c-.552 0-1-.448-1-1s.448-1 1-1 1 .448 1 1-.448 1-1 1zm-5-20c0-.552.448-1 1-1h6c.553 0 1 .448 1 1s-.447 1-1 1h-6c-.552 0-1-.448-1-1z" />
-                    </svg>
-                  </center>
-                </Typography>
-                <Typography variant="body1" color="textPrimary" component="ul">
-                  <li className="item">Git (Version control)</li>
-                  <li className="item">Docker (Container registry)</li>
-                  <li className="item">Figma (Design tool)</li>
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card className="${classes.root} card">
-              <CardContent>
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="h5"
-                  className="subtitle3"
-                >
-                  <center>
-                    On the radar&nbsp;<br></br>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M6 12c0 2.206 1.794 4 4 4 1.761 0 3.242-1.151 3.775-2.734l2.224-1.291.001.025c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6c1.084 0 2.098.292 2.975.794l-2.21 1.283c-.248-.048-.503-.077-.765-.077-2.206 0-4 1.794-4 4zm4-2c-1.105 0-2 .896-2 2s.895 2 2 2 2-.896 2-2l-.002-.015 3.36-1.95c.976-.565 2.704-.336 3.711.159l4.931-2.863-3.158-1.569.169-3.632-4.945 2.87c-.07 1.121-.734 2.736-1.705 3.301l-3.383 1.964c-.29-.163-.621-.265-.978-.265zm7.995 1.911l.005.089c0 4.411-3.589 8-8 8s-8-3.589-8-8 3.589-8 8-8c1.475 0 2.853.408 4.041 1.107.334-.586.428-1.544.146-2.18-1.275-.589-2.69-.927-4.187-.927-5.523 0-10 4.477-10 10s4.477 10 10 10c5.233 0 9.521-4.021 9.957-9.142-.301-.483-1.066-1.061-1.962-.947z" />
-                    </svg>
-                  </center>
-                </Typography>
-                <Typography variant="body1" color="textPrimary" component="ul">
-                  <li className="item">Angular (Currently learning)</li>
-                  <li className="item">TypeScript (Currently learning)</li>
-                  <li className="item">Rust</li>
-                  <li className="item">PHP/Laravel</li>
-                  <li className="item">WASM</li>
-                </Typography>
+                <CardRows>
+                  <Typography
+                    variant="body2"
+                    color="textPrimary"
+                    component="ul"
+                  >
+                    <h3>Proficient:</h3>
+                    <InsideRow>
+                      <li className="item">React/NextJS/Gatsby</li>
+                      <li className="item">Angular 9</li>
+                    </InsideRow>
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textPrimary"
+                    component="ul"
+                  >
+                    <h3>Familiar:</h3>
+                    <InsideRow>
+                      <li className="item">Vue</li>
+                      <li className="item">JQuery</li>
+                      <li className="item">JSF</li>
+                    </InsideRow>
+                  </Typography>
+                </CardRows>
               </CardContent>
             </Card>
           </div>
