@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import styled from "@emotion/styled";
+import Cards from "./UI/Cards";
 
 const Container = styled.div`
   width: 100%;
@@ -37,7 +38,7 @@ const Introduction = ({ title, description }) => {
       </div>
       <div className="grid">
         <Container>
-          
+            <Cards/> 
         </Container>
       </div>
     </Fragment>

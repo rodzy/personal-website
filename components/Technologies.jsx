@@ -61,17 +61,25 @@ const Technologies = ({ title, description }) => {
               <Typography variant="body2" color="textPrimary" component="ul">
                 <h3>Proficient:</h3>
                 <InsideRow>
+                  <ul style={{
+                    padding:0,
+                  }}>
                   <li className="item">C#</li>
                   <li className="item">JavaScript</li>
                   <li className="item">TypeScript</li>
+                  </ul>
                 </InsideRow>
               </Typography>
               <Typography variant="body2" color="textPrimary" component="ul">
                 <h3>Familiar:</h3>
                 <InsideRow>
+                <ul style={{
+                    padding:0,
+                  }}>
                   <li className="item">Java</li>
                   <li className="item">PHP</li>
                   <li className="item">Go</li>
+                  </ul>
                 </InsideRow>
               </Typography>
             </CardRows>
@@ -101,11 +109,15 @@ const Technologies = ({ title, description }) => {
             <CardRows>
               <Typography variant="body2" color="textPrimary" component="ul">
                 <InsideRow>
+                <ul style={{
+                    padding:0,
+                  }}>
                   <li className="item">HTML</li>
                   <li className="item">CSS</li>
                   <li className="item">GraphQL</li>
                   <li className="item">JSON</li>
                   <li className="item">Markdown</li>
+                  </ul>
                 </InsideRow>
               </Typography>
             </CardRows>
@@ -134,9 +146,13 @@ const Technologies = ({ title, description }) => {
             </Typography>
             <Typography variant="body2" color="textPrimary" component="ul">
               <InsideRow>
+              <ul style={{
+                    padding:0,
+                  }}>
                 <li className="item">PostgreSQL</li>
                 <li className="item">Microsoft SQL Server</li>
                 <li className="item">MySQL</li>
+                </ul>
               </InsideRow>
             </Typography>
           </CardContent>
@@ -170,9 +186,13 @@ const Technologies = ({ title, description }) => {
             </Typography>
             <Typography variant="body2" color="textPrimary" component="ul">
               <InsideRow>
+              <ul style={{
+                    padding:0,
+                  }}>
                 <li className="item">MongoDB</li>
                 <li className="item">MongoDB Atlas</li>
                 <li className="item">Firebase Cloud Firestore</li>
+                </ul>
               </InsideRow>
             </Typography>
           </CardContent>
@@ -202,16 +222,24 @@ const Technologies = ({ title, description }) => {
               <Typography variant="body2" color="textPrimary" component="ul">
                 <h3>Proficient:</h3>
                 <InsideRow>
+                <ul style={{
+                    padding:0,
+                  }}>
                   <li className="item">NodeJS/Express</li>
                   <li className="item">TSNode</li>
                   <li className="item">ASP.NET MVC</li>
+                  </ul>
                 </InsideRow>
               </Typography>
               <Typography variant="body2" color="textPrimary" component="ul">
                 <h3>Familiar:</h3>
                 <InsideRow>
+                <ul style={{
+                    padding:0,
+                  }}>
                   <li className="item">Echo/Mux</li>
                   <li className="item">Laravel</li>
+                  </ul>
                 </InsideRow>
               </Typography>
             </CardRows>
@@ -242,16 +270,24 @@ const Technologies = ({ title, description }) => {
               <Typography variant="body2" color="textPrimary" component="ul">
                 <h3>Proficient:</h3>
                 <InsideRow>
+                <ul style={{
+                    padding:0,
+                  }}>
                   <li className="item">React/NextJS/Gatsby</li>
                   <li className="item">Angular 9</li>
+                  </ul>
                 </InsideRow>
               </Typography>
               <Typography variant="body2" color="textPrimary" component="ul">
                 <h3>Familiar:</h3>
                 <InsideRow>
+                <ul style={{
+                    padding:0,
+                  }}>
                   <li className="item">Vue</li>
                   <li className="item">JQuery</li>
                   <li className="item">JSF</li>
+                  </ul>
                 </InsideRow>
               </Typography>
             </CardRows>
@@ -262,7 +298,7 @@ const Technologies = ({ title, description }) => {
       <Card className="${classes.root} maincard">
         <CardMedia
           className={classes.media}
-          image="UTN-feria.png"
+          image={require("../public/UTN-feria.png")}
           title="UTN"
         />
         <CardContent>
@@ -270,9 +306,11 @@ const Technologies = ({ title, description }) => {
             Universidad Técnica Nacional
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
+         
             Associates diploma<br></br>
             Currently student<br></br>
             <b>Start date:</b>16/01/2017
+           
           </Typography>
         </CardContent>
       </Card>
