@@ -97,6 +97,9 @@ const Layout = (props) => {
             text-decoration: none;
           }
 
+          .header{
+            height:20vh;
+          }
           .title a {
             color: #ffffff;
             text-decoration: none;
@@ -138,8 +141,12 @@ const Layout = (props) => {
             letter-spacing: 0.01rem;
           }
           .principal {
-            position: relative;
-            top: -186px;
+            display:grid;
+            align-items:center;
+            padding-top:30px;
+          }
+          .principal img{
+            justify-self:center;
           }
 
           code {
@@ -375,10 +382,11 @@ const Layout = (props) => {
           }
         `}
       />
-
+      <div className="header">
       <Header />
       <Navigation />
-      <main>{props.children}</main>
+      </div>
+      {props.children}
     </Fragment>
   );
 };

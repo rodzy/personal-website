@@ -55,7 +55,6 @@ const Introduction = ({ title, description }) => {
           Most of my projects are open source and publicly available on GitHub,
           feel free to check them out or even contribute to them
         </p>
-        <hr />
       </div>
     </Fragment>
   );
