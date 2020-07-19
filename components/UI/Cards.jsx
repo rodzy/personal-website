@@ -90,8 +90,8 @@ const Cards = () => {
         <div>
           Gastby static website made for TypeTech.org.
           <ul>
-            <li>Desing and animations made from scratch.</li>
-            <li>Responsive web desing.</li>
+            <li>Design and animations made from scratch.</li>
+            <li>Responsive web design.</li>
             <li>GraphQL SEO optimizations.</li>
             <li>
               Hooks integration for email and news letter using MailChimp.
@@ -154,11 +154,11 @@ const Cards = () => {
         <div>
           Pre-rendered static website for my portfolio.
           <ul>
-            <li>Desing and animations made from scratch.</li>
+            <li>Design and animations made from scratch.</li>
             <li>Added Material-UI for the technologies cards.</li>
-            <li>Responsive web desing.</li>
+            <li>Responsive web design.</li>
             <li>Static to SSR images optimized.</li>
-            <li>Responsive web desing.</li>
+            <li>Responsive web design.</li>
           </ul>
         </div>
       </CardContainer>
@@ -270,7 +270,7 @@ const Cards = () => {
         <div>
           A coding challenge using Redux to handle the state from the Github REST API v.3.
           <ul>
-            <li>Building the desing and animations from scratch.</li>
+            <li>Building the design and animations from scratch.</li>
             <li>A fun challenge with a time limit of 2h 30min.</li>
             <li>
               Challenge to get into the Github developer program.
