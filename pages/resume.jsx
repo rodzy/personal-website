@@ -23,19 +23,8 @@ const Skills = () => {
         <main>
           <Layout />
           <Introduction title="Projects" description="Some of the projects I've worked on or contributed to"/>
-          <hr style={{
-            width:1000,
-            marginTop:20,
-            marginBottom:20,
-
-          }}></hr>
           <Technologies title="Technologies" description="Some of the technologies that I've used over time, right now I'm focusing on React, GraphQL and NodeJS."/>
-          <hr style={{
-            width:1000,
-            marginTop:20,
-            marginBottom:20,
 
-          }}></hr>
           <Studies/>
           
         </main>
