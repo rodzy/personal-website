@@ -20,6 +20,9 @@ const Container = styled.div`
   &::-webkit-scrollbar-thumb {
     background: #000000;
   }
+  @media screen and (max-width:600px){
+      height:90vh;
+  }
 `;
 
 const Introduction = ({ title, description }) => {
