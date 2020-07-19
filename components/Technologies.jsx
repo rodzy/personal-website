@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   root: {
     maxWidth: 800,
-    boxShadow: "none",
+    boxShadow: "3",
   },
   media: {
     height: 300,
@@ -314,6 +314,8 @@ const Technologies = ({ title, description }) => {
           </Typography>
         </CardContent>
       </Card>
+      {" "}
+      <hr></hr>
     </Fragment>
   );
 };
