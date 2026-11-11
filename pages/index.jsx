@@ -33,7 +33,7 @@ export default function Home() {
           <Layout />
           <div className="principal">
               <Me
-                src={require("../public/83157061_1812557535541457_900108481044938752_o.jpg")}
+                src="/83157061_1812557535541457_900108481044938752_o.jpg"
                 alt="Profile"
               />
             <p className="description">

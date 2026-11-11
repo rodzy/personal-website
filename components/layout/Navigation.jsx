@@ -25,12 +25,12 @@ const Navigation = () => {
           `}
         >
           <Nav>
-            <Link href="/">
+            <Link href="/" legacyBehavior passHref>
               <Navlinks>
                 <Navtext>About me</Navtext>
               </Navlinks>
             </Link>
-            <Link href="/resume">
+            <Link href="/resume" legacyBehavior passHref>
               <Navlinks>
                 <Navtext>Resume</Navtext>
               </Navlinks>
