@@ -31,7 +31,7 @@ const Studies = () => {
       <Card className="${classes.root} maincard">
         <CardMedia
           className={classes.media}
-          image={require("../public/UTN-feria.png")}
+          image="/UTN-feria.png"
           title="UTN"
           />
         <CardContent>
