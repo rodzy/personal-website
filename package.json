@@ -21,5 +21,27 @@
     "next-optimized-images": "^2.6.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "resolutions": {
+    "ajv": "6.14.0",
+    "brace-expansion": "1.1.18",
+    "braces": "3.0.3",
+    "browserify-sign": "4.2.2",
+    "browserslist": "4.28.7",
+    "cipher-base": "1.0.5",
+    "elliptic": "6.6.1",
+    "lodash": "4.18.1",
+    "micromatch": "4.0.8",
+    "minimatch": "3.1.4",
+    "minimist": "1.2.6",
+    "nanoid": "3.3.18",
+    "node-fetch": "2.6.7",
+    "pbkdf2": "3.1.7",
+    "picomatch": "2.3.2",
+    "postcss": "8.5.23",
+    "semver": "6.3.1",
+    "sha.js": "2.4.12",
+    "shell-quote": "1.9.0",
+    "yaml": "1.10.3"
   }
 }
